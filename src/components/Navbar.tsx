@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="dark:bg-gray-900 sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
       <div
-        className=" container px-4 mx-auto relative max-w-screen-xl flex flex-wrap items-center
+        className=" container px-4 relative max-w-screen-xl flex flex-wrap items-center
        justify-between mx-auto p-4"
       >
         <Link
@@ -46,7 +46,11 @@ export default function Navbar() {
           >
             {links.map((link) => (
               <li key={link.id}>
-                <Link to={link.to} className={link.styles}>
+                <Link
+                  onClick={handleOnClick}
+                  to={link.to}
+                  className={link.styles}
+                >
                   {link.name}
                 </Link>
               </li>

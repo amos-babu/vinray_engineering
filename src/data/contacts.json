@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "path": "/socials/linkedin.svg",
+        "link":"https://www.linkedin.com/in/amos-babu-275597202/",
+        "alt":"LinkedIn Logo"
+    },
+    {
+        "id": 2,
+        "path": "/socials/instagram.svg",
+        "link":"https://www.linkedin.com/in/amos-babu-275597202/",
+        "alt":"Instagram Logo"
+    },
+    {
+        "id": 3,
+        "path": "/socials/facebook.svg",
+        "link":"https://www.linkedin.com/in/amos-babu-275597202/",
+        "alt":"Facebook Logo"
+    },
+    {
+        "id": 4,
+        "path": "/socials/bluesky.svg",
+        "link":"https://www.linkedin.com/in/amos-babu-275597202/",
+        "alt":"Bluesky Logo"
+    },
+    {
+        "id": 5,
+        "path": "/socials/whatsapp.svg",
+        "link":"https://www.linkedin.com/in/amos-babu-275597202/",
+        "alt":"Whatsapp Logo"
+    }
+]

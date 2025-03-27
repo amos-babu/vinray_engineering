@@ -1,5 +1,6 @@
 import BackgroundImage from "../components/BackgroundImage";
 import checkCircle from "../assets/check-circle.svg";
+import bloquote from "../assets/bloquote.svg";
 import whyChoose from "../data/whychoose.json";
 
 const AboutUs = () => {
@@ -17,24 +18,45 @@ const AboutUs = () => {
           projects.
         </p>
       </div>
-      <div className="font-semibold text-4xl text-center lg:mx-5 md:mx-5 mt-10 ">
+      <div className="font-semibold text-2xl lg:text-4xl text-center lg:mx-5 md:mx-5 mt-10 ">
         Why Choose Vinray Engineering Limited?
       </div>
-      <div className="flex flex-col justify-center lg:justify-start lg:mx-4 mt-10 mb-20 gap-4">
+      <div className="flex flex-col lg:flex-row flex-wrap gap-8 mt-10 items-center justify-center mx-auto w-full max-w-4xl">
         {whyChoose.map((why) => (
           <div
             key={why.id}
-            className="flex flex-col gap-4 justify-center lg:mx-80"
+            className="block max-w-sm p-6 cursor-pointer bg-white border
+             border-gray-200 rounded-lg shadow-sm 
+             hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700
+              dark:hover:bg-gray-700"
           >
-            <div className="flex justify-center gap-4">
+            <div className="flex justify-start gap-4">
               <img className="w-10 h-10" src={checkCircle} alt="Check" />
-              <p className="self-center text-xl font-medium">{why.name}</p>
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                {why.name}
+              </h5>
             </div>
-            <div className="text-lg text-center self-center text-neutral-500">
+            <p className="font-normal text-gray-700 dark:text-gray-400 mt-5">
               {why.description}
-            </div>
+            </p>
           </div>
         ))}
+      </div>
+
+      <div className="font-semibold text-4xl text-center lg:mx-5 md:mx-5 mt-10 ">
+        Industries Served
+      </div>
+
+      <div className="mt-10 mx-6 lg:mx-30 mb-20">
+        <blockquote className="text-xl italic font-semibold text-gray-900 dark:text-white">
+          <img className="w-15 h-15" src={bloquote} alt="Bloquote" />
+          <p>
+            "With a solid reputation for delivering superior products and
+            services, Vinray Engineering Limited is a trusted partner for
+            projects requiring precision, reliability, and cutting-edge
+            electrical and industrial solutions."
+          </p>
+        </blockquote>
       </div>
     </>
   );

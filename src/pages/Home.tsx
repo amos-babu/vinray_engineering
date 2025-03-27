@@ -14,9 +14,11 @@ const Home = () => {
       justify-center h-full text-white text-xl"
       >
         <h1 className="text-center mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white">
-          We engineer the{" "}
+          We <span className="underline decoration-orange-600">engineer</span>{" "}
+          the{" "}
           <span className="bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent">
-            future’s possibilities
+            future’s{" "}
+            <span className="underline decoration-white">possibilities</span>
           </span>
         </h1>
 

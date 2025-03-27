@@ -5,7 +5,7 @@ type BackgroundImageProps = {
 const BackgroundImage = ({ header }: BackgroundImageProps) => {
   return (
     <div className="mb-10">
-      <div className="flex flex-col relative h-50 w-full items-center justify-center">
+      <div className="flex flex-col relative h-50 lg:h-117 w-full items-center justify-center">
         <div
           className="absolute inset-0 
       bg-[url('https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg')] 

@@ -1,7 +1,7 @@
-const Services = () => {
-  return (
-    <div>Services</div>
-  )
-}
+import BackgroundImage from "../components/BackgroundImage";
 
-export default Services
+const Services = () => {
+  return <BackgroundImage header="Services" />;
+};
+
+export default Services;

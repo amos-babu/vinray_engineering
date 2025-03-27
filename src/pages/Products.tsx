@@ -1,5 +1,41 @@
+import BackgroundImage from "../components/BackgroundImage";
+
 const Products = () => {
-  return <div>Products</div>;
+  return (
+    <>
+      <BackgroundImage header="Products" />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mx-5">
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Products;

@@ -1,7 +1,7 @@
-const ContactUs = () => {
-  return (
-    <div>ContactUs</div>
-  )
-}
+import BackgroundImage from "../components/BackgroundImage";
 
-export default ContactUs
+const ContactUs = () => {
+  return <BackgroundImage header="Contacts" />;
+};
+
+export default ContactUs;

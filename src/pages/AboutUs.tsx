@@ -1,7 +1,7 @@
 import BackgroundImage from "../components/BackgroundImage";
 import checkCircle from "../assets/check-circle.svg";
 import bloquote from "../assets/bloquote.svg";
-import whyChoose from "../data/whychoose.json";
+import whyChooseUs from "../data/whychooseUs.json";
 
 const AboutUs = () => {
   return (
@@ -21,12 +21,12 @@ const AboutUs = () => {
       <div className="font-semibold text-2xl lg:text-4xl text-center lg:mx-5 md:mx-5 mt-10 ">
         Why Choose Vinray Engineering Limited?
       </div>
-      <div className="flex flex-col lg:flex-row flex-wrap gap-8 mt-10 items-center justify-center mx-auto w-full max-w-4xl">
-        {whyChoose.map((why) => (
+      <div className="flex flex-col lg:flex-row md:flex-row flex-wrap gap-8 mt-10 items-center justify-center mx-auto w-full max-w-4xl">
+        {whyChooseUs.map((why) => (
           <div
             key={why.id}
             className="block max-w-sm p-6 cursor-pointer bg-white border
-             border-gray-200 rounded-lg shadow-sm 
+             border-gray-200 rounded-lg shadow-lg 
              hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700
               dark:hover:bg-gray-700"
           >

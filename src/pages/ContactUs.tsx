@@ -25,28 +25,28 @@ const ContactUs = () => {
           </h1>
 
           <div className="flex flex-col lg:flex-row gap-4 mt-10 justify-center lg:justify-start lg:px-50 items-center">
-            <img className="w-10 h-10" src={mapPin} alt="map-pin" />
+            <img className="w-5 h-5" src={mapPin} alt="map-pin" />
             <p className="text-base font-semibold text-center lg:text-start py-3">
               Ruiru Town P.O. Box 33319-00600, Nairobi, Kenya
             </p>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-4 mt-10 justify-center lg:justify-start lg:px-50 items-center">
-            <img className="w-10 h-10" src={envelope} alt="envelope" />
+            <img className="w-5 h-5" src={envelope} alt="envelope" />
             <p className="text-base font-semibold break-all text-center lg:text-start py-3">
               sales@vinrayengineering.com
             </p>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-4 mt-10 justify-center lg:justify-start lg:px-50 items-center">
-            <img className="w-10 h-10" src={envelope} alt="envelope" />
+            <img className="w-5 h-5" src={envelope} alt="envelope" />
             <p className="text-base break-all font-semibold text-center lg:text-start py-3">
               info@vinrayengineering.com
             </p>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-4 mt-10 justify-center lg:justify-start lg:px-50 items-center">
-            <img className="w-10 h-10" src={phone} alt="phone" />
+            <img className="w-5 h-5" src={phone} alt="phone" />
             <p className="text-base font-semibold text-center lg:text-start py-3">
               +254756020125, +254756020132, +254756020134
             </p>

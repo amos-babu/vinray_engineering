@@ -7,16 +7,25 @@ const AboutUs = () => {
   return (
     <>
       <BackgroundImage header="About Us" />
-      <div className="flex flex-col lg:mx-4 md:mx-4">
-        <p className="text-lg text-center text-neutral-500">
-          <span className="font-bold">Vinray Engineering Limited</span> is a
-          dynamic and innovative company specializing in the manufacturing and
-          supply of high-quality electrical and industrial solutions. With a
-          focus on excellence, precision, and customer satisfaction, the company
-          offers a comprehensive range of products and services tailored to meet
-          the demands of modern infrastructure, industrial, and commercial
-          projects.
-        </p>
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:mx-4 md:mx-4">
+        <div className="mx-1 md:mx-20 lg:w-1/2">
+          <p className="text-lg text-center text-neutral-500">
+            <span className="font-bold">Vinray Engineering Limited</span> is a
+            dynamic and innovative company specializing in the manufacturing and
+            supply of high-quality electrical and industrial solutions. With a
+            focus on excellence, precision, and customer satisfaction, the
+            company offers a comprehensive range of products and services
+            tailored to meet the demands of modern infrastructure, industrial,
+            and commercial projects.
+          </p>
+        </div>
+        <div className="mx-1">
+          <img
+            className="h-auto max-w-full rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+            alt="Products"
+          />
+        </div>
       </div>
       <div className="font-semibold text-2xl lg:text-4xl text-center lg:mx-5 md:mx-5 mt-10 ">
         Why Choose Vinray Engineering Limited?

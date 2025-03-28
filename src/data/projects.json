@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "category": "Electrical Panel",
+      "category": "Electrical Panels",
       "images": [
         { "id": 101, "src": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" },
         { "id": 102, "src": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" },
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "category": "Cable Management",
+      "category": "Cable Managements",
       "images": [
         { "id": 201, "src": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" },
         { "id": 202, "src": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" },

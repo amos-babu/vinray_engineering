@@ -20,7 +20,11 @@ const Products = () => {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mx-5 mt-10">
+      <div
+        className={`grid grid-cols-1 md:grid-cols-2 gap-2 mx-5 mt-10 ${
+          !selectedCategory ? "mb-20" : ""
+        }`}
+      >
         {selectedCategory &&
           projects
             .find((p) => p.category === selectedCategory)

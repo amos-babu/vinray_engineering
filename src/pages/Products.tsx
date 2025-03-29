@@ -1,9 +1,16 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import BackgroundImage from "../components/BackgroundImage";
 import projects from "../data/projects.json";
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
+
+  const productSectionRef = useRef<null | HTMLDivElement>(null);
+
+  const handleCategoryClick = (category: string) => {
+    setSelectedCategory(category);
+    productSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <>
@@ -12,18 +19,22 @@ const Products = () => {
         {projects.map((project) => (
           <button
             key={project.id}
-            onClick={() => setSelectedCategory(project.category)}
-            className={`text-sm cursor-pointer font-semibold bg-black/10 hover:bg-[#EF7275]
-             hover:text-white py-3 w-50 text-center rounded-full transition-all`}
+            onClick={() => handleCategoryClick(project.category)}
+            className={`text-sm cursor-pointer font-semibold hover:bg-[#EF7275]
+             hover:text-white py-3 w-50 text-center rounded-full transition-all ${
+               selectedCategory == project.category
+                 ? "bg-[#EF7275] text-white"
+                 : "bg-black/10"
+             }`}
           >
             {project.category}
           </button>
         ))}
       </div>
       <div
-        className={`grid grid-cols-1 md:grid-cols-2 gap-2 mx-5 mt-10 ${
-          !selectedCategory ? "mb-20" : ""
-        }`}
+        ref={productSectionRef}
+        id="product-section"
+        className={`grid grid-cols-1 md:grid-cols-2 gap-2 mx-5 mt-10 mb-20`}
       >
         {selectedCategory &&
           projects

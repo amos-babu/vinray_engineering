@@ -2,16 +2,16 @@ const Footer = () => {
   return (
     <footer className="dark:bg-gray-900 h-16 mt-10 fixed bottom-0 right-0 left-0 z-10">
       <div className="w-full">
-        <div className="px-4 py-6 bg-gray-900 dark:bg-gray-700 md:flex md:items-center md:justify-between">
-          <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
-            © 2025 <a href="https://flowbite.com/">Vinray™</a>. All Rights
+        <div className="px-4 py-6 bg-gradient-to-r from-[#EF7275] to-[#EF7275]/80 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+          <span className="text-sm text-gray-900 dark:text-gray-300 sm:text-center">
+            © 2025 <a href="https://vinray.netlify.app/">Vinray™</a>. All Rights
             Reserved.
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center md:mt-0 rtl:space-x-reverse">
             <a
               target="_blank"
               href="https://www.facebook.com/people/Amos-Babu/"
-              className="text-gray-400 hover:text-lime-700 dark:hover:text-white"
+              className="text-gray-900 hover:text-lime-700 dark:hover:text-white"
             >
               <svg
                 className="w-4 h-4"
@@ -30,7 +30,7 @@ const Footer = () => {
             </a>
             <a
               href="#"
-              className="text-gray-400 hover:text-lime-700 dark:hover:text-white"
+              className="text-gray-900 hover:text-lime-700 dark:hover:text-white"
             >
               <svg
                 className="w-4 h-4"
@@ -45,7 +45,7 @@ const Footer = () => {
             </a>
             <a
               href="https://x.com/glimmering_wiz"
-              className="text-gray-400 hover:text-lime-700 dark:hover:text-white"
+              className="text-gray-900 hover:text-lime-700 dark:hover:text-white"
             >
               <svg
                 className="w-4 h-4"
@@ -64,7 +64,7 @@ const Footer = () => {
             </a>
             <a
               href="https://github.com/amos-babu"
-              className="text-gray-400 hover:text-lime-700 dark:hover:text-white"
+              className="text-gray-900 hover:text-lime-700 dark:hover:text-white"
             >
               <svg
                 className="w-4 h-4"
@@ -83,7 +83,7 @@ const Footer = () => {
             </a>
             <a
               href="#"
-              className="text-gray-400 hover:text-lime-700 dark:hover:text-white"
+              className="text-gray-900 hover:text-lime-700 dark:hover:text-white"
             >
               <svg
                 className="w-4 h-4"

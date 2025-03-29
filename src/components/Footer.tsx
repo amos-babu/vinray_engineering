@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="dark:bg-gray-900 h-16 mt-10 fixed bottom-0 right-0 left-0 z-10">
       <div className="w-full">
-        <div className="px-4 py-6 bg-orange-700 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+        <div className="px-4 py-6 bg-orange-600 dark:bg-gray-700 md:flex md:items-center md:justify-between">
           <span className="text-sm text-gray-900 dark:text-gray-300 sm:text-center">
             © 2025 <a href="https://vinray.netlify.app/">Vinray™</a>. All Rights
             Reserved.

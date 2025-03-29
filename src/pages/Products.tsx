@@ -20,10 +20,10 @@ const Products = () => {
           <button
             key={project.id}
             onClick={() => handleCategoryClick(project.category)}
-            className={`text-sm cursor-pointer font-semibold hover:bg-[#EF7275]
+            className={`text-sm cursor-pointer font-semibold hover:bg-orange-600/50
              hover:text-white py-3 w-50 text-center rounded-full transition-all ${
                selectedCategory == project.category
-                 ? "bg-[#EF7275] text-white"
+                 ? "bg-orange-600 text-white"
                  : "bg-black/10"
              }`}
           >

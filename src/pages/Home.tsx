@@ -13,7 +13,7 @@ const Home = () => {
         className="relative z-10 flex flex-col items-center 
       justify-center h-full text-white text-xl"
       >
-        <h1 className="text-center mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white">
+        <h1 className="text-center mb-4 text-4xl/20 font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white">
           We <span className="underline decoration-orange-600">engineer</span>{" "}
           the{" "}
           <span className="bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent">

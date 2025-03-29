@@ -8,7 +8,7 @@ const ContactUs = () => {
     <>
       <BackgroundImage header="Contact Us" />
       <div className="mb-10 lg:mb-20">
-        <h1 className="font-bold text-2xl lg:text-4xl text-center">
+        <h1 className="font-bold break-all text-2xl lg:text-4xl text-center">
           Get In Touch
         </h1>
       </div>
@@ -20,7 +20,7 @@ const ContactUs = () => {
              hover:bg-orange-100 dark:bg-gray-800 dark:border-gray-700
               dark:hover:bg-gray-700"
         >
-          <h1 className="font-bold text-xl lg:text-2xl text-center py-3">
+          <h1 className="font-bold text-xl break-all lg:text-2xl text-center py-3">
             Nairobi Office
           </h1>
 
@@ -47,7 +47,7 @@ const ContactUs = () => {
 
           <div className="flex flex-col lg:flex-row gap-4 mt-10 justify-center lg:justify-start lg:px-50 items-center">
             <img className="w-5 h-5" src={phone} alt="phone" />
-            <p className="text-base font-semibold text-center lg:text-start py-3">
+            <p className="text-base break-all font-semibold text-center lg:text-start py-3">
               +254756020125, +254756020132, +254756020134
             </p>
           </div>

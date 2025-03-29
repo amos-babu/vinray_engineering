@@ -19,7 +19,7 @@ const BackgroundImage = ({ header }: BackgroundImageProps) => {
           <h1
             className="text-4xl sm:text-6xl lg:text-7xl text-center font-bold 
           bg-gradient-to-r from-orange-700 to-orange-600 bg-clip-text 
-          text-transparent"
+          text-transparent break-all"
           >
             {header}
           </h1>

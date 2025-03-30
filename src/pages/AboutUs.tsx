@@ -58,7 +58,7 @@ const AboutUs = () => {
 
       <div className="mt-10 mx-6 lg:mx-30 mb-20">
         <blockquote className="text-xl italic font-semibold text-gray-900 dark:text-white">
-          <img className="w-15 h-15" src={bloquote} alt="Bloquote" />
+          <img className="w-12 h-12" src={bloquote} alt="Bloquote" />
           <p>
             "With a solid reputation for delivering superior products and
             services, Vinray Engineering Limited is a trusted partner for

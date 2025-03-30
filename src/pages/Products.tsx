@@ -3,7 +3,7 @@ import BackgroundImage from "../components/BackgroundImage";
 import projects from "../data/projects.json";
 
 const Products = () => {
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("Electrical Panels");
 
   const productSectionRef = useRef<null | HTMLDivElement>(null);
 

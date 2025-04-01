@@ -1,5 +1,6 @@
 import BackgroundImage from "../components/BackgroundImage";
 import check from "../assets/check.svg";
+import sparkles from "../assets/sparkles.svg";
 import services from "../data/services.json";
 
 const Services = () => {
@@ -10,9 +11,12 @@ const Services = () => {
         {services.map((service) => (
           <div key={service.id} className={service.serviceStyles}>
             <div className="lg:w-1/2 mx-4">
-              <h1 className="text-2xl lg:text-3xl font-bold text-center lg:text-start">
-                {service.title}
-              </h1>
+              <div className="flex justify-center items-center gap-4">
+                <img className="w-6 h-6" src={sparkles} alt="sparkles" />
+                <h1 className="text-2xl lg:text-3xl font-bold text-center lg:text-start">
+                  {service.title}
+                </h1>
+              </div>
               <ul className="mt-10 ">
                 {service.services.map((service) => (
                   <li

@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "serviceStyles": "flex flex-col gap-10 lg:flex-row-reverse justify-center items-center lg:items-start",
+        "title": "Laser Machining and Designs",
+        "image":"https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
+        "services":[
+            {
+                "id": 1,
+                "description": "Precision laser cutting and engraving services for metals and non-metals."
+            },
+            {
+                "id": 2,
+                "description": "Capability to create intricate designs, prototypes, and custom components with high accuracy."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "serviceStyles": "flex flex-col lg:flex-row gap-10 justify-center items-center lg:items-start",
+        "title": "Powder Coating",
+        "image":"https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
+        "services":[
+            {
+                "id": 1,
+                "description": "In-house powder coating services that provide durable and aesthetically pleasing finishes for metal components."
+            },
+            {
+                "id": 2,
+                "description": "A wide range of colors and textures to suit customer specifications."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "serviceStyles": "flex flex-col lg:flex-row-reverse gap-10 justify-center items-center lg:items-start",
+        "title": "Electrical Design and Consultation",
+        "image":"https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
+        "services":[
+            {
+                "id": 1,
+                "description": "Expertise in designing electrical systems for residential, commercial, and industrial projects."
+            },
+            {
+                "id": 2,
+                "description": "Load analysis and power distribution planning."
+            },
+            {
+                "id": 3,
+                "description": "Energy-efficient solutions and renewable energy integrations."
+            },
+            {
+                "id": 4,
+                "description": "Compliance with safety standards and regulations."
+            },
+            {
+                "id": 5,
+                "description": "End-to-end consultation, from initial concept to implementation and post-installation support."
+            }
+        ]
+    }
+]

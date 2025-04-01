@@ -17,7 +17,7 @@ const ContactUs = () => {
         <div
           className="block w-5/6 lg:w-3/4 cursor-pointer bg-gray-100 border
              border-gray-200 rounded-lg shadow-sm 
-             hover:bg-orange-100 dark:bg-gray-800 dark:border-gray-700
+             hover:bg-orange-300 dark:bg-gray-800 dark:border-gray-700
               dark:hover:bg-gray-700"
         >
           <h1 className="font-bold text-xl break-all lg:text-2xl text-center py-3">

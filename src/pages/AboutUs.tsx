@@ -2,6 +2,7 @@ import BackgroundImage from "../components/BackgroundImage";
 import checkCircle from "../assets/check-circle.svg";
 import bloquote from "../assets/bloquote.svg";
 import whyChooseUs from "../data/whychooseUs.json";
+import indServed from "../data//indServed.json";
 import check from "../assets/check.svg";
 
 const AboutUs = () => {
@@ -56,36 +57,19 @@ const AboutUs = () => {
       <div className="font-semibold text-2xl text-center lg:mx-5 md:mx-5 mt-10 ">
         Industries Served
       </div>
-      <div className="flex flex-col justify-center items-start lg:items-center md:items-center gap-10 mt-5 px-4">
-        <div className="flex items-start justify-start gap-4 lg:w-1/2 md:w-1/2 md:w-1/2">
-          <img className="w-7 h-7" src={check} alt="check" />
-          <p className="text-start text-neutral-500 text-lg">
-            Power and energy distribution.
-          </p>
-        </div>
-        <div className="flex justify-start items-start gap-4 lg:w-1/2 md:w-1/2">
-          <img className="w-7 h-7" src={check} alt="check" />
-          <p className="text-start text-neutral-500 text-lg">
-            Telecommunications and IT.
-          </p>
-        </div>
-        <div className="flex justify-start lg:w-1/2 md:w-1/2 items-start gap-4">
-          <img className="w-7 h-7" src={check} alt="check" />
-          <p className="text-start text-neutral-500 text-lg">
-            Industrial automation.
-          </p>
-        </div>
-        <div className="flex justify-start lg:w-1/2 md:w-1/2 items-start gap-4">
-          <img className="w-7 h-7" src={check} alt="check" />
-          <p className="text-start text-neutral-500 text-lg">
-            Construction and real estate development.
-          </p>
-        </div>
-        <div className="flex justify-start lg:w-1/2 md:w-1/2 items-start gap-4">
-          <img className="w-7 h-7" src={check} alt="check" />
-          <p className="text-start text-neutral-500 text-lg">
-            Utilities and public infrastructure.
-          </p>
+      <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-start items-start gap-10 mt-5 px-4 md:w-3/4 lg:w-1/2">
+          {indServed.map((ind) => (
+            <div
+              key={ind.id}
+              className="flex items-center justify-center gap-4"
+            >
+              <img className="w-7 h-7" src={check} alt="check" />
+              <p className="text-start text-neutral-500 text-lg">
+                {ind.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
 

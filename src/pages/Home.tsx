@@ -1,15 +1,13 @@
 import { Link } from "react-router-dom";
+import videoBg from "../assets/video.mp4";
 
 const Home = () => {
   return (
     <div className="flex flex-col relative h-screen w-full">
+      <div className="overlay"></div>
+      <video src={videoBg} autoPlay loop muted />
       <div
-        className="absolute inset-0 
-      bg-[url('https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg')] 
-      bg-cover bg-center before:absolute before:inset-0 before:bg-black/50"
-      ></div>
-
-      <div
+        id="content"
         className="relative z-10 flex flex-col items-center 
       justify-center h-full text-white text-xl"
       >

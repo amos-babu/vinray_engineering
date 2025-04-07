@@ -2,11 +2,12 @@ import BackgroundImage from "../components/BackgroundImage";
 import check from "../assets/icons/check.svg";
 import sparkles from "../assets/icons/sparkles.svg";
 import services from "../utils/services.ts";
+import bgImage from "../assets/images/image-14.jpg";
 
 const Services = () => {
   return (
     <>
-      <BackgroundImage header="Services" />
+      <BackgroundImage header="Services" bgImage={bgImage} />
       <div className="flex flex-col justify-center items-start mt-10 lg:mt-20 gap-10 lg:gap-30 mx-5 mb-20">
         {services.map((service) => (
           <div key={service.id} className={service.serviceStyles}>

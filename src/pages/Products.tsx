@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import BackgroundImage from "../components/BackgroundImage";
 import projects from "../utils/products";
+import bgImage from "../assets/images/image-5.jpg";
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("Electrical Panels");
@@ -14,7 +15,7 @@ const Products = () => {
 
   return (
     <>
-      <BackgroundImage header="Products" />
+      <BackgroundImage header="Products" bgImage={bgImage} />
       <div className="flex flex-wrap justify-center items-center mt-10 px-4 gap-4">
         {projects.map((project) => (
           <button

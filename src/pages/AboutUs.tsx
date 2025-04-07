@@ -5,11 +5,12 @@ import whyChooseUs from "../data/whychooseUs.json";
 import indServed from "../data//indServed.json";
 import check from "../assets/icons/check.svg";
 import aboutUsImage from "../assets/images/image-2.jpg";
+import bgImage from "../assets/images/image-8.jpg";
 
 const AboutUs = () => {
   return (
     <>
-      <BackgroundImage header="About Us" />
+      <BackgroundImage header="About Us" bgImage={bgImage} />
       <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10 lg:mx-4 md:mx-4">
         <div className="mx-1 md:mx-20 lg:w-1/2">
           <p className="text-lg text-center text-neutral-500">

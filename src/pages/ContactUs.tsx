@@ -2,11 +2,12 @@ import BackgroundImage from "../components/BackgroundImage";
 import mapPin from "../assets/icons/map-pin.svg";
 import phone from "../assets/icons/phone.svg";
 import envelope from "../assets/icons/envelope.svg";
+import bgImage from "../assets/images/image-13.jpg";
 
 const ContactUs = () => {
   return (
     <>
-      <BackgroundImage header="Contact Us" />
+      <BackgroundImage header="Contact Us" bgImage={bgImage}/>
       <div className="mb-10 lg:mb-20">
         <h1 className="font-bold break-all text-2xl lg:text-4xl text-center">
           Get In Touch

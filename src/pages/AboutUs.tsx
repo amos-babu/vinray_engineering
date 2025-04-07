@@ -13,13 +13,15 @@ const AboutUs = () => {
       <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10 lg:mx-4 md:mx-4">
         <div className="mx-1 md:mx-20 lg:w-1/2">
           <p className="text-lg text-center text-neutral-500">
-            <span className="font-bold">Vinray Engineering Limited</span> is a
-            dynamic and innovative company specializing in the manufacturing and
-            supply of high-quality electrical and industrial solutions. With a
-            focus on excellence, precision, and customer satisfaction, the
-            company offers a comprehensive range of products and services
-            tailored to meet the demands of modern infrastructure, industrial,
-            and commercial projects.
+            <span className="font-bold text-xl">
+              Vinray Engineering Limited
+            </span>{" "}
+            is a dynamic and innovative company specializing in the
+            manufacturing and supply of high-quality electrical and industrial
+            solutions. With a focus on excellence, precision, and customer
+            satisfaction, the company offers a comprehensive range of products
+            and services tailored to meet the demands of modern infrastructure,
+            industrial, and commercial projects.
           </p>
         </div>
         <div className="w-full h-150 lg:w-1/2 lg:h-100">

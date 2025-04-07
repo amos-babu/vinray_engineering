@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import BackgroundImage from "../components/BackgroundImage";
-import projects from "../data/projects.json";
+import projects from "../utils/products";
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("Electrical Panels");

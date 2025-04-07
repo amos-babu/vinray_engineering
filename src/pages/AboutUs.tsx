@@ -4,7 +4,7 @@ import bloquote from "../assets/icons/bloquote.svg";
 import whyChooseUs from "../data/whychooseUs.json";
 import indServed from "../data//indServed.json";
 import check from "../assets/icons/check.svg";
-import aboutUsImage from "../assets/images/image-1.jpg";
+import aboutUsImage from "../assets/images/image-2.jpg";
 
 const AboutUs = () => {
   return (

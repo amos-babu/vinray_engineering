@@ -1,7 +1,7 @@
 import BackgroundImage from "../components/BackgroundImage";
 import check from "../assets/icons/check.svg";
 import sparkles from "../assets/icons/sparkles.svg";
-import services from "../data/services.json";
+import services from "../utils/services.ts";
 
 const Services = () => {
   return (

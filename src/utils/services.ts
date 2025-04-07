@@ -1,9 +1,13 @@
-[
+import electricDesignConsultation from "../assets/images/image-3.jpg";
+import powderCoating from "../assets/images/image-4.jpg";
+import laserMachining from "../assets/images/image-5.jpg";
+
+const services = [
     {
         "id": 1,
         "serviceStyles": "flex flex-col gap-10 lg:flex-row-reverse justify-center items-center lg:items-start",
         "title": "Laser Machining and Designs",
-        "image":"https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
+        "image": laserMachining,
         "services":[
             {
                 "id": 1,
@@ -19,7 +23,7 @@
         "id": 2,
         "serviceStyles": "flex flex-col lg:flex-row gap-10 justify-center items-center lg:items-start",
         "title": "Powder Coating",
-        "image":"https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
+        "image": powderCoating,
         "services":[
             {
                 "id": 1,
@@ -35,7 +39,7 @@
         "id": 3,
         "serviceStyles": "flex flex-col lg:flex-row-reverse gap-10 justify-center items-center lg:items-start",
         "title": "Electrical Design and Consultation",
-        "image":"https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
+        "image": electricDesignConsultation,
         "services":[
             {
                 "id": 1,
@@ -60,3 +64,5 @@
         ]
     }
 ]
+
+export default services;

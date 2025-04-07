@@ -35,7 +35,7 @@ const Products = () => {
       <div
         ref={productSectionRef}
         id="product-section"
-        className={`grid grid-cols-1 md:grid-cols-2 gap-2 mx-5 mt-10 mb-20`}
+        className="flex flex-col lg:flex-row flex-wrap justify-center items-center gap-5 lg:mx-5 mt-10 mb-20"
       >
         {selectedCategory &&
           projects

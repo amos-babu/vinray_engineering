@@ -1,15 +1,16 @@
 import BackgroundImage from "../components/BackgroundImage";
-import checkCircle from "../assets/check-circle.svg";
-import bloquote from "../assets/bloquote.svg";
+import checkCircle from "../assets/icons/check-circle.svg";
+import bloquote from "../assets/icons/bloquote.svg";
 import whyChooseUs from "../data/whychooseUs.json";
 import indServed from "../data//indServed.json";
-import check from "../assets/check.svg";
+import check from "../assets/icons/check.svg";
+import aboutUsImage from "../assets/images/image-1.jpg";
 
 const AboutUs = () => {
   return (
     <>
       <BackgroundImage header="About Us" />
-      <div className="flex flex-col lg:flex-row justify-center items- lg:items-start gap-10 lg:mx-4 md:mx-4">
+      <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10 lg:mx-4 md:mx-4">
         <div className="mx-1 md:mx-20 lg:w-1/2">
           <p className="text-lg text-center text-neutral-500">
             <span className="font-bold">Vinray Engineering Limited</span> is a
@@ -21,10 +22,10 @@ const AboutUs = () => {
             and commercial projects.
           </p>
         </div>
-        <div className="mx-1">
+        <div className="w-full h-150 lg:w-1/2 lg:h-100">
           <img
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+            className="h-full w-full rounded-lg"
+            src={aboutUsImage}
             alt="Products"
           />
         </div>

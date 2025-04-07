@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import lines from "../assets/lines.svg";
-import close from "../assets/close.svg";
+import lines from "../assets/icons/lines.svg";
+import close from "../assets/icons/close.svg";
 import links from "../data/links.json";
 
 export default function Navbar() {

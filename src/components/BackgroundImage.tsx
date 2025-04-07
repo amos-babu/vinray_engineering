@@ -1,3 +1,5 @@
+import videoBg from "../assets/video/video.mp4";
+
 type BackgroundImageProps = {
   header: string;
 };
@@ -6,15 +8,12 @@ const BackgroundImage = ({ header }: BackgroundImageProps) => {
   return (
     <div className="mb-10">
       <div className="flex flex-col relative h-50 lg:h-100 w-full items-center justify-center">
+        <div className="overlay"></div>
+        <video src={videoBg} autoPlay loop muted></video>
         <div
-          className="absolute inset-0 
-      bg-[url('https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg')] 
-      bg-cover bg-center before:absolute before:inset-0 before:bg-black/50"
-        ></div>
-
-        <div
+          id="content"
           className="relative z-10 flex flex-col items-center 
-      justify-center h-full text-white text-xl"
+          justify-center h-full text-white text-xl"
         >
           <h1
             className="text-4xl sm:text-6xl lg:text-7xl text-center font-bold 

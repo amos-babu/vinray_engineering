@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import videoBg from "../assets/video.mp4";
+import videoBg from "../assets/video/video.mp4";
 
 const Home = () => {
   return (
@@ -28,13 +28,13 @@ const Home = () => {
 
         <div className="flex flex-col lg:flex-row md:flex-row gap-4">
           <Link to={`/contact-us`}>
-            <button className="px-10 mt-3 py-3 text-sm bg-orange-600 rounded-lg hover:bg-orange-800">
+            <button className="cursor-pointer px-10 mt-3 py-3 text-sm bg-orange-600 rounded-lg hover:bg-orange-800">
               Contact Us
             </button>
           </Link>
 
           <Link to={`/about-us`}>
-            <button className="px-10 mt-3 py-3 text-sm border pointer-cursor hover:text-orange-600 rounded-lg">
+            <button className="cursor-pointer px-10 mt-3 py-3 text-sm border pointer-cursor hover:text-orange-600 rounded-lg">
               Learn More
             </button>
           </Link>

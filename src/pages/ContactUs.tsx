@@ -1,7 +1,7 @@
 import BackgroundImage from "../components/BackgroundImage";
-import mapPin from "../assets/map-pin.svg";
-import phone from "../assets/phone.svg";
-import envelope from "../assets/envelope.svg";
+import mapPin from "../assets/icons/map-pin.svg";
+import phone from "../assets/icons/phone.svg";
+import envelope from "../assets/icons/envelope.svg";
 
 const ContactUs = () => {
   return (

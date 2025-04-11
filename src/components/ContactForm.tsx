@@ -35,7 +35,7 @@ const ContactForm = () => {
     setErrors([]);
 
     await axios
-      .post("https://node-email-services.onrender.com/api/contact", formData)
+      .post("http://localhost:3000/api/contact", formData)
       .then((res) => {
         toast.success(res.data.msg);
         setFormData({
@@ -50,6 +50,7 @@ const ContactForm = () => {
           const validationErrors = err.response.data.errors;
           setErrors(validationErrors);
         }
+        console.log(err);
       });
   };
 
@@ -93,7 +94,7 @@ const ContactForm = () => {
               />
             </div>
             {getError("name") && (
-              <p className="text-red-500 text-base mt-1">{getError("name")}</p>
+              <p className="text-red-500 text-xs mt-1">{getError("name")}</p>
             )}
           </div>
           <div>
@@ -122,7 +123,7 @@ const ContactForm = () => {
               />
             </div>
             {getError("email") && (
-              <p className="text-red-500 text-base mt-1">{getError("email")}</p>
+              <p className="text-red-500 text-xs mt-1">{getError("email")}</p>
             )}
           </div>
           <div>
@@ -151,7 +152,7 @@ const ContactForm = () => {
               />
             </div>
             {getError("phone_number") && (
-              <p className="text-red-500 text-base mt-1">
+              <p className="text-red-500 text-xs mt-1">
                 {getError("phone_number")}
               </p>
             )}
@@ -177,9 +178,7 @@ const ContactForm = () => {
               placeholder="Write your message here..."
             ></textarea>
             {getError("message") && (
-              <p className="text-red-500 text-base mt-1">
-                {getError("message")}
-              </p>
+              <p className="text-red-500 text-xs mt-1">{getError("message")}</p>
             )}
           </div>
           <button

@@ -32,12 +32,12 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setErrors([]);
 
-    await axios 
+    await axios
       .post("https://node-email-services.onrender.com/api/contact", formData)
       .then((res) => {
-        setErrors([]);
-        toast(res.data.msg);
+        toast.success(res.data.msg);
         setFormData({
           name: "",
           email: "",
@@ -59,13 +59,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <Toaster
-        position="top-right"
-        toastOptions={{
-          className: "bg-orange-600 text-white",
-          duration: 3000,
-        }}
-      />
+      <Toaster position="top-right" />
       <form onSubmit={handleSubmit} className="mx-3 lg:w-1/2">
         <div className="mb-10 lg:mb-20">
           <h1 className="font-bold break-all text-2xl lg:text-4xl text-center">

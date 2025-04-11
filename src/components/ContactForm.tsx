@@ -59,7 +59,13 @@ const ContactForm = () => {
 
   return (
     <>
-      <Toaster />
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          className: "bg-orange-600 text-white",
+          duration: 3000,
+        }}
+      />
       <form onSubmit={handleSubmit} className="mx-3 lg:w-1/2">
         <div className="mb-10 lg:mb-20">
           <h1 className="font-bold break-all text-2xl lg:text-4xl text-center">

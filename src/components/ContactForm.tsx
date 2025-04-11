@@ -33,8 +33,8 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    await axios
-      .post("http://localhost:3000/api/contact", formData)
+    await axios 
+      .post("https://node-email-services.onrender.com/api/contact", formData)
       .then((res) => {
         setErrors([]);
         toast(res.data.msg);

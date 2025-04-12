@@ -35,7 +35,7 @@ const Products = () => {
       <div
         ref={productSectionRef}
         id="product-section"
-        className="flex flex-col lg:flex-row flex-wrap justify-center items-center gap-5 lg:mx-5 mt-10 mb-20"
+        className="flex flex-row lg:flex-row flex-wrap justify-center items-center gap-5 lg:mx-5 mt-10 mb-20"
       >
         {selectedCategory &&
           projects
@@ -43,7 +43,7 @@ const Products = () => {
             ?.images.map((image) => (
               <div key={image.id}>
                 <img
-                  className="h-auto max-w-full rounded-lg"
+                  className="h-auto w-full hover:opacity-60 cursor-pointer max-w-96 rounded-lg"
                   src={image.src}
                   alt="Products"
                 />

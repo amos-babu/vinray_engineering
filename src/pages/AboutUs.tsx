@@ -27,7 +27,7 @@ const AboutUs = () => {
         </div>
         <div className="w-full h-150 lg:w-1/2 lg:h-100">
           <img
-            className="h-full w-full rounded-lg"
+            className="h-full w-full rounded-lg  hover:opacity-60 cursor-pointer"
             src={aboutUsImage}
             alt="Products"
           />

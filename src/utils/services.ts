@@ -2,7 +2,18 @@ import electricDesignConsultation from "../assets/images/image-3.jpg";
 import powderCoating from "../assets/images/image-4.jpg";
 import laserMachining from "../assets/images/image-5.jpg";
 
-const services = [
+type ServiceProps = {
+    id: number;
+    serviceStyles: string;
+    title: string;
+    image: string
+    services: {
+        id: number;
+        description: string
+    }[]
+}
+
+const services: ServiceProps[] = [
     {
         "id": 1,
         "serviceStyles": "flex flex-col gap-10 lg:flex-row-reverse justify-center items-center lg:items-start",

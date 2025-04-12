@@ -33,7 +33,11 @@ const Services = () => {
               </ul>
             </div>
             <div className="lg:w-1/2 mt-10 lg:mt-0">
-              <img className="rounded-xl" src={service.image} alt="service" />
+              <img
+                className="rounded-xl hover:opacity-60 cursor-pointer"
+                src={service.image}
+                alt="service"
+              />
             </div>
           </div>
         ))}

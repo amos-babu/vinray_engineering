@@ -35,7 +35,7 @@ const ContactForm = () => {
     setErrors([]);
 
     await axios
-      .post("http://localhost:3000/api/contact", formData)
+      .post("https://node-email-services.onrender.com/api/contact", formData)
       .then((res) => {
         toast.success(res.data.msg);
         setFormData({

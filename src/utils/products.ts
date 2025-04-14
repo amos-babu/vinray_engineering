@@ -75,6 +75,7 @@ const products: ProductsProps[] = [
         { "id": 403, "src": "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" }
       ]
     }
+    
   ]
 
   export default products;

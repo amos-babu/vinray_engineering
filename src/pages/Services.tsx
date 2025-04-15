@@ -3,6 +3,7 @@ import check from "../assets/icons/check.svg";
 import sparkles from "../assets/icons/sparkles.svg";
 import services from "../utils/services.ts";
 import bgImage from "../assets/images/image-14.jpg";
+import { motion } from "motion/react";
 
 const Services = () => {
   return (
@@ -11,7 +12,12 @@ const Services = () => {
       <div className="flex flex-col justify-center items-start mt-10 lg:mt-20 gap-10 lg:gap-30 mx-5 mb-20">
         {services.map((service) => (
           <div key={service.id} className={service.serviceStyles}>
-            <div className="lg:w-1/2 mx-4">
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 1.5 }}
+              className="lg:w-1/2 mx-4"
+            >
               <div className="flex justify-center items-center gap-4">
                 <img className="w-6 h-6" src={sparkles} alt="sparkles" />
                 <h1 className="text-2xl lg:text-3xl font-bold text-center lg:text-start">
@@ -31,9 +37,12 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
             <div className="lg:w-1/2 mt-10 lg:mt-0">
-              <img
+              <motion.img
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 100 }}
+                transition={{ duration: 1.5 }}
                 className="rounded-xl hover:opacity-60 cursor-pointer"
                 src={service.image}
                 alt="service"

@@ -8,16 +8,24 @@ const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("Electrical Panels");
 
   const productSectionRef = useRef<null | HTMLDivElement>(null);
+  const backTopRef = useRef<null | HTMLDivElement>(null);
 
   const handleCategoryClick = (category: string) => {
     setSelectedCategory(category);
     productSectionRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleBackTop = () => {
+    backTopRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="relative">
       <BackgroundImage header="Products" bgImage={bgImage} />
-      <div className="flex flex-wrap justify-center items-center mt-10 px-4 gap-4">
+      <div
+        ref={backTopRef}
+        className="flex flex-wrap justify-center items-center mt-10 px-4 gap-4"
+      >
         {projects.map((project) => (
           <button
             key={project.id}
@@ -35,7 +43,6 @@ const Products = () => {
       </div>
       <div
         ref={productSectionRef}
-        id="product-section"
         className="flex flex-row lg:flex-row flex-wrap justify-center items-center gap-5 lg:mx-5 mt-10 mb-20"
       >
         {selectedCategory &&
@@ -44,7 +51,8 @@ const Products = () => {
             ?.images.map((image) => (
               <div key={image.id}>
                 <img
-                  className="h-auto w-full hover:opacity-70 hover:max-w-110 cursor-pointer max-w-96 rounded-lg"
+                  className="h-auto w-full transition hover:scale-120
+                   duration-300 cursor-pointer max-w-96 rounded-lg"
                   src={image.src}
                   alt="Products"
                 />
@@ -52,9 +60,11 @@ const Products = () => {
             ))}
       </div>
       <button
-        className="sticky bg-gray-200 bottom-4 
+        onClick={handleBackTop}
+        className="fixed bg-gray-200 bottom-4 
             left-1/2 transform -translate-x-1/2
-            px-4 py-4 rounded-full shadow"
+            px-4 py-4 rounded-full shadow cursor-pointer"
+        aria-label="Back to top"
       >
         <img className="w-7 h-7" src={backTop} alt="Check" />
       </button>

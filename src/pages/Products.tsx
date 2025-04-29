@@ -43,7 +43,7 @@ const Products = () => {
             ?.images.map((image) => (
               <div key={image.id}>
                 <img
-                  className="h-auto w-full hover:opacity-60 cursor-pointer max-w-96 rounded-lg"
+                  className="h-auto w-full hover:opacity-70 hover:max-w-110 cursor-pointer max-w-96 rounded-lg"
                   src={image.src}
                   alt="Products"
                 />

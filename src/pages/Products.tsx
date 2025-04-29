@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import BackgroundImage from "../components/BackgroundImage";
 import projects from "../utils/products";
 import bgImage from "../assets/images/image-5.jpg";
+import backTop from "../assets/icons/back-top.svg";
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("Electrical Panels");
@@ -14,7 +15,7 @@ const Products = () => {
   };
 
   return (
-    <>
+    <div className="relative">
       <BackgroundImage header="Products" bgImage={bgImage} />
       <div className="flex flex-wrap justify-center items-center mt-10 px-4 gap-4">
         {projects.map((project) => (
@@ -50,7 +51,14 @@ const Products = () => {
               </div>
             ))}
       </div>
-    </>
+      <button
+        className="sticky bg-gray-200 bottom-4 
+            left-1/2 transform -translate-x-1/2
+            px-4 py-4 rounded-full shadow"
+      >
+        <img className="w-7 h-7" src={backTop} alt="Check" />
+      </button>
+    </div>
   );
 };
 

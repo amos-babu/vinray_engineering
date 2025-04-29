@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import BackgroundImage from "../components/BackgroundImage";
 import projects from "../utils/products";
 import bgImage from "../assets/images/image-5.jpg";
@@ -6,6 +6,7 @@ import backTop from "../assets/icons/back-top.svg";
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("Electrical Panels");
+  const [showButton, setShowButton] = useState(false);
 
   const productSectionRef = useRef<null | HTMLDivElement>(null);
   const backTopRef = useRef<null | HTMLDivElement>(null);
@@ -18,6 +19,17 @@ const Products = () => {
   const handleBackTop = () => {
     backTopRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowButton(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
 
   return (
     <div className="relative">
@@ -59,15 +71,17 @@ const Products = () => {
               </div>
             ))}
       </div>
-      <button
-        onClick={handleBackTop}
-        className="fixed bg-gray-200 bottom-4 
+      {showButton && (
+        <button
+          onClick={handleBackTop}
+          className="fixed bg-gray-200 bottom-4 
             left-1/2 transform -translate-x-1/2
             px-4 py-4 rounded-full shadow cursor-pointer"
-        aria-label="Back to top"
-      >
-        <img className="w-7 h-7" src={backTop} alt="Check" />
-      </button>
+          aria-label="Back to top"
+        >
+          <img className="w-7 h-7" src={backTop} alt="Check" />
+        </button>
+      )}
     </div>
   );
 };

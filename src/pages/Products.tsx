@@ -9,7 +9,7 @@ const Products = () => {
   const [showButton, setShowButton] = useState(false);
 
   const productSectionRef = useRef<null | HTMLDivElement>(null);
-  const backTopRef = useRef<null | HTMLDivElement>(null);
+  const backTopRef = useRef<HTMLDivElement>(null);
 
   const handleCategoryClick = (category: string) => {
     setSelectedCategory(category);
@@ -29,7 +29,7 @@ const Products = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  });
+  }, []);
 
   return (
     <div className="relative">

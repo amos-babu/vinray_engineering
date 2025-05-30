@@ -27,15 +27,16 @@ const AboutUs = () => {
   return (
     <>
       <BackgroundImage header="About Us" bgImage={bgImage} />
-      <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10 lg:mx-4 md:mx-4">
+      <div className="flex flex-col lg:flex-row justify-center items-center
+       lg:items-start gap-2 lg:mx-4 md:mx-4">
         <div className="mx-1 md:mx-20 lg:w-1/2">
           <motion.p
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1.5 }}
-            className="text-lg text-center text-neutral-500"
+            className="text-xl text-center text-neutral-500"
           >
-            <span className="font-bold text-xl">
+            <span className="font-bold text-2xl">
               Vinray Engineering Limited
             </span>{" "}
             is a dynamic and innovative company specializing in the
@@ -46,7 +47,7 @@ const AboutUs = () => {
             industrial, and commercial projects.
           </motion.p>
         </div>
-        <div className="w-full h-150 lg:w-1/2 lg:h-100">
+        <div className="w-full lg:mx-20 h-150 lg:w-1/2 lg:h-100">
           <motion.img
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}

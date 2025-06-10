@@ -68,7 +68,7 @@ const AboutUs = () => {
       </motion.div>
       <div className="flex flex-col lg:flex-row md:flex-row flex-wrap gap-8 mt-10 items-center justify-center mx-auto w-full max-w-8xl">
         {whyChooseUs.map((why) => (
-          <div
+          <motion.div
             key={why.id}
             className="block max-w-md p-6 cursor-pointer bg-white border
              border-gray-200 rounded-lg shadow-lg 
@@ -84,7 +84,7 @@ const AboutUs = () => {
             <p className="font-normal text-gray-700 dark:text-gray-400 mt-5">
               {why.description}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
 
@@ -114,17 +114,24 @@ const AboutUs = () => {
 
       <div className="mt-10 mx-6 lg:mx-30 mb-20">
         <blockquote className="text-xl italic font-semibold text-gray-900 dark:text-white">
-          <img
+          <motion.img
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1 }}
             className="w-10 h-10"
             src={bloquote}
             alt="Bloquote"
           />
-          <p>
+          <motion.p
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1 }}
+          >
             "With a solid reputation for delivering superior products and
             services, Vinray Engineering Limited is a trusted partner for
             projects requiring precision, reliability, and cutting-edge
             electrical and industrial solutions."
-          </p>
+          </motion.p>
         </blockquote>
       </div>
     </>

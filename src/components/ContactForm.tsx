@@ -51,7 +51,6 @@ const ContactForm = () => {
           const validationErrors = err.response.data.errors;
           setErrors(validationErrors);
         }
-        console.log(err);
       });
   };
 

@@ -2,30 +2,25 @@
     {
         "id": 1,
         "name": "Quality Assurance",
-        "iconVariants": 2.5,
         "description": "Adherence to stringent quality control processes to ensure products meet global standards."
     },
     {
         "id": 2,
-        "iconVariants": 3.5,
         "name": "Innovative Solutions",
         "description": "Cutting-edge technologies and modern manufacturing processes to deliver innovative and reliable solutions."
     },
     {
         "id": 3,
-        "iconVariants": 5,
         "name": "Customization",
         "description": "Tailored solutions to meet the unique requirements of clients across various sectors."
     },
     {
         "id": 4,
-        "iconVariants": 2.5,
         "name": "Sustainability",
         "description": "Commitment to environmentally friendly practices in design and manufacturing."
     },
     {
         "id": 5,
-        "iconVariants": 2,
         "name": "Expertise and Experience",
         "description": "A team of highly skilled engineers and technicians with extensive industry experience."
     }

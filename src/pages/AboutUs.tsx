@@ -69,9 +69,6 @@ const AboutUs = () => {
       <div className="flex flex-col lg:flex-row md:flex-row flex-wrap gap-8 mt-10 items-center justify-center mx-auto w-full max-w-8xl">
         {whyChooseUs.map((why) => (
           <motion.div
-            variants={iconVariants(why.iconVariants, "y")}
-            initial="initial"
-            animate="animate"
             key={why.id}
             className="block max-w-md p-6 cursor-pointer bg-white border
              border-gray-200 rounded-lg shadow-lg 

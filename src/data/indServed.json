@@ -1,27 +1,22 @@
 [
     {
         "id": 1,
-        "iconVariants": 2.5,
         "description": "Power and energy distribution."
     },
     {
         "id": 2,
-        "iconVariants": 3,
         "description": "Telecommunications and IT."
     },
     {
         "id": 3,
-        "iconVariants": 5,
         "description": "Industrial automation."
     },
     {
         "id": 4,
-        "iconVariants": 3,
         "description": "Construction and real estate development."
     },
     {
         "id": 5,
-        "iconVariants": 2,
         "description": "Utilities and public infrastructure."
     }
 ]

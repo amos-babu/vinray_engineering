@@ -68,7 +68,7 @@ const AboutUs = () => {
       </motion.div>
       <div className="flex flex-col lg:flex-row md:flex-row flex-wrap gap-8 mt-10 items-center justify-center mx-auto w-full max-w-8xl">
         {whyChooseUs.map((why) => (
-          <motion.div
+          <div
             key={why.id}
             className="block max-w-md p-6 cursor-pointer bg-white border
              border-gray-200 rounded-lg shadow-lg 
@@ -84,7 +84,7 @@ const AboutUs = () => {
             <p className="font-normal text-gray-700 dark:text-gray-400 mt-5">
               {why.description}
             </p>
-          </motion.div>
+          </div>
         ))}
       </div>
 
@@ -99,10 +99,7 @@ const AboutUs = () => {
       <div className="flex flex-col justify-center items-center">
         <div className="flex flex-col justify-start items-start gap-10 mt-5 px-4 md:w-3/4 lg:w-1/2">
           {indServed.map((ind) => (
-            <motion.div
-              variants={iconVariants(ind.iconVariants, "x")}
-              initial="initial"
-              animate="animate"
+            <div
               key={ind.id}
               className="flex items-center justify-center gap-4"
             >
@@ -110,31 +107,24 @@ const AboutUs = () => {
               <p className="text-start text-neutral-500 text-lg">
                 {ind.description}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
 
       <div className="mt-10 mx-6 lg:mx-30 mb-20">
         <blockquote className="text-xl italic font-semibold text-gray-900 dark:text-white">
-          <motion.img
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: -100 }}
-            transition={{ duration: 1 }}
+          <img
             className="w-10 h-10"
             src={bloquote}
             alt="Bloquote"
           />
-          <motion.p
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: 100 }}
-            transition={{ duration: 1 }}
-          >
+          <p>
             "With a solid reputation for delivering superior products and
             services, Vinray Engineering Limited is a trusted partner for
             projects requiring precision, reliability, and cutting-edge
             electrical and industrial solutions."
-          </motion.p>
+          </p>
         </blockquote>
       </div>
     </>

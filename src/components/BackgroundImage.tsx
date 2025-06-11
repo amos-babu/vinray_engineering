@@ -17,7 +17,7 @@ const BackgroundImage = ({ header, bgImage }: BackgroundImageProps) => {
   });
   return (
     <div className="mb-10">
-      <div className="flex flex-col relative h-50 lg:h-100 w-full items-center justify-center">
+      <div className="flex flex-col relative h-100 lg:min-h-100 w-full items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center 
             before:absolute before:inset-0 before:bg-black/50"

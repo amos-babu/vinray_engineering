@@ -34,7 +34,9 @@ const Home = () => {
           variants={container(0.5, -100, "y")}
           initial="hidden"
           animate="visible"
-          className="text-center mb-4 text-4xl/20 font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white"
+          className="text-center mb-4 text-4xl/20 font-light tracking-normal 
+          leading-none md:leading-14 lg:leading-30 text-white md:text-5xl 
+          lg:text-8xl dark:text-white"
         >
           We <span className="underline decoration-orange-600">engineer</span>{" "}
           the{" "}
@@ -44,16 +46,13 @@ const Home = () => {
           </span>
         </motion.h1>
 
-        <motion.span
-          variants={container(0.5, 100, "y")}
-          initial="hidden"
-          animate="visible"
-          className="mx-3 text-center w-2/3"
+        <span
+          className="mx-3 text-center text-2xl font-extralight w-2/3"
         >
           The services we provide are a fusion of our knowledge, skills, and
           expertise, combined with a deep understanding of our customers’ needs
           and requirements.
-        </motion.span>
+        </span>
 
         <div className="flex flex-col lg:flex-row md:flex-row gap-4">
           <Link to={`/contact-us`}>
@@ -61,7 +60,8 @@ const Home = () => {
               variants={container(0.5, -100, "x")}
               initial="hidden"
               animate="visible"
-              className="cursor-pointer px-10 mt-3 py-3 text-sm bg-orange-600 rounded-lg hover:bg-orange-800"
+              className="cursor-pointer px-10 mt-3 py-3 text-xl bg-orange-600 
+              rounded-3xl hover:bg-orange-800"
             >
               Contact Us
             </motion.button>
@@ -72,7 +72,8 @@ const Home = () => {
               variants={container(0.5, 100, "x")}
               initial="hidden"
               animate="visible"
-              className="cursor-pointer px-10 mt-3 py-3 text-sm border pointer-cursor hover:text-orange-600 rounded-lg"
+              className="cursor-pointer px-10 mt-3 py-3 text-xl border pointer-cursor 
+              hover:text-orange-600 rounded-3xl"
             >
               Learn More
             </motion.button>

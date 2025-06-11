@@ -9,7 +9,7 @@ export default function Navbar() {
 
   const handleOnClick = () => setOpenNavBar(!openNavBar);
   return (
-    <nav className="sticky dark:bg-gray-900 sticky top-0 z-50 py-3 bg:transparent  border-neutral-700/80">
+    <nav className="dark:bg-gray-900 sticky top-0 z-50 py-3 bg:transparent  border-neutral-700/80">
       <div
         className="container px-4 relative max-w-screen-xl flex flex-wrap items-center
        justify-between mx-auto p-4"

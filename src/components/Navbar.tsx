@@ -9,7 +9,7 @@ export default function Navbar() {
 
   const handleOnClick = () => setOpenNavBar(!openNavBar);
   return (
-    <nav className="dark:bg-gray-900 sticky py-3  top-0 z-50 bg-transparent">
+    <nav className="dark:bg-gray-900 sticky py-3 top-0 z-50 bg-transparent">
       <div
         className="container px-4 relative max-w-screen-xl flex flex-wrap items-center
        justify-between mx-auto p-4"
@@ -35,7 +35,7 @@ export default function Navbar() {
           <img src={openNavBar ? close : lines} alt="Lines" />
         </button>
         <div
-          className={`${!openNavBar ? "hidden" : ""} w-full md:block md:w-auto`}
+          className={`${!openNavBar ? "hidden" : ""} w-full md:block md:w-auto backdrop-blur-lg`}
           id="navbar-default"
         >
           <ul

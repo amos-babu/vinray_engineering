@@ -46,12 +46,12 @@ const Home = () => {
           leading-13 md:leading-14 lg:leading-30 text-white md:text-5xl 
           lg:text-8xl dark:text-white"
         >
-          We <span className="underline decoration-orange-600">engineer</span>{" "}
+          We <span className="underline decoration-orange-600 underline-offset-10">engineer</span>{" "}
           the{" "}
           <span className="bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text 
           text-transparent">
             future’s{" "}
-            <span className="underline decoration-white">possibilities</span>
+            <span className="underline decoration-white underline-offset-10">possibilities</span>
           </span>
         </motion.h1>
 

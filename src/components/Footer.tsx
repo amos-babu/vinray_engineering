@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="dark:bg-gray-900 h-16">
       <div className="w-full">
-        <div className="px-4 py-6 bg-orange-600 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+        <div className="flex px-4 py-6 bg-orange-600 dark:bg-gray-700 md:flex md:items-center md:justify-between">
           <span className="text-sm text-gray-900 dark:text-gray-300 sm:text-center">
               <p>&copy; {new Date().getFullYear()} Vinray Engineering. All rights reserved.</p>
           </span>

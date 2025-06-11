@@ -42,8 +42,8 @@ const Home = () => {
           variants={container(0.5, -100, "y")}
           initial="hidden"
           animate="visible"
-          className="text-center mb-4 text-4xl/20 font-light tracking-normal 
-          leading-none md:leading-14 lg:leading-30 text-white md:text-3xl 
+          className="text-center mt-20 mb-4 text-5xl/20 font-light tracking-normal 
+          leading-13 md:leading-14 lg:leading-30 text-white md:text-5xl 
           lg:text-8xl dark:text-white"
         >
           We <span className="underline decoration-orange-600">engineer</span>{" "}
@@ -69,7 +69,7 @@ const Home = () => {
               variants={container(0.5, -100, "x")}
               initial="hidden"
               animate="visible"
-              className="cursor-pointer px-10 mt-3 py-3 text-lg bg-orange-600 
+              className="cursor-pointer px-10 mt-3 py-3 text-base md:text-lg bg-orange-600 
               rounded-3xl hover:bg-orange-800"
             >
               Contact Us
@@ -81,7 +81,7 @@ const Home = () => {
               variants={container(0.5, 100, "x")}
               initial="hidden"
               animate="visible"
-              className="cursor-pointer px-10 mt-3 py-3 text-lg border pointer-cursor 
+              className="cursor-pointer px-10 mt-3 py-3 text-base md:text-lg border pointer-cursor 
               hover:text-orange-600 rounded-3xl"
             >
               Learn More

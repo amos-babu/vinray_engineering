@@ -35,19 +35,20 @@ const Home = () => {
           initial="hidden"
           animate="visible"
           className="text-center mb-4 text-4xl/20 font-light tracking-normal 
-          leading-none md:leading-14 lg:leading-30 text-white md:text-5xl 
+          leading-none md:leading-14 lg:leading-30 text-white md:text-3xl 
           lg:text-8xl dark:text-white"
         >
           We <span className="underline decoration-orange-600">engineer</span>{" "}
           the{" "}
-          <span className="bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text 
+          text-transparent">
             future’s{" "}
             <span className="underline decoration-white">possibilities</span>
           </span>
         </motion.h1>
 
         <span
-          className="mx-3 text-center text-2xl font-extralight w-2/3"
+          className="mx-3 text-center text-xl font-extralight w-2/3"
         >
           The services we provide are a fusion of our knowledge, skills, and
           expertise, combined with a deep understanding of our customers’ needs
@@ -60,7 +61,7 @@ const Home = () => {
               variants={container(0.5, -100, "x")}
               initial="hidden"
               animate="visible"
-              className="cursor-pointer px-10 mt-3 py-3 text-xl bg-orange-600 
+              className="cursor-pointer px-10 mt-3 py-3 text-lg bg-orange-600 
               rounded-3xl hover:bg-orange-800"
             >
               Contact Us
@@ -72,7 +73,7 @@ const Home = () => {
               variants={container(0.5, 100, "x")}
               initial="hidden"
               animate="visible"
-              className="cursor-pointer px-10 mt-3 py-3 text-xl border pointer-cursor 
+              className="cursor-pointer px-10 mt-3 py-3 text-lg border pointer-cursor 
               hover:text-orange-600 rounded-3xl"
             >
               Learn More

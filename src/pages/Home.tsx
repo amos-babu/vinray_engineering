@@ -21,10 +21,18 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col relative h-screen w-full">
-      <div className="overlay"></div>
+    <div className="flex flex-col relative h-screen w-full overflow-hidden">
+      <div className="absolute inset-0 bg-black/60 z-[1]"></div> 
       <Navbar />
-      <video src={videoBg} autoPlay loop muted />
+      <video
+        className="absolute top-1/2 left-1/2 min-w-full 
+        min-h-full object-cover -translate-x-1/2 
+        -translate-y-1/2 z-0" 
+        src={videoBg} 
+        aria-label="Background Video"
+        autoPlay 
+        loop 
+        muted  />
       <div
         id="content"
         className="relative z-10 flex flex-col items-center 

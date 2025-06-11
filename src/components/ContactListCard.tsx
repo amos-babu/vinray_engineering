@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const ContactListCard = () => {
   return (
-    <div className="lg:w-1/2 mx-4">
+    <div className="lg:w-2/5 mx-4">
       <div className="mb-10 lg:mb-20">
         <motion.h1
           whileInView={{ opacity: 1, x: 0 }}

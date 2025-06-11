@@ -22,10 +22,9 @@ const Home = () => {
 
   return (
     <div className="flex flex-col relative h-screen w-full">
-      <Navbar />
       <div className="overlay"></div>
       <video src={videoBg} autoPlay loop muted />
-      
+      {/* <Navbar /> */}
       <div
         id="content"
         className="relative z-10 flex flex-col items-center 

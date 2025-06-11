@@ -61,7 +61,7 @@ const ContactForm = () => {
   return (
     <>
       <Toaster position="top-right" />
-      <form onSubmit={handleSubmit} className="mx-3 lg:w-1/2">
+      <form onSubmit={handleSubmit} className="mx-3 lg:w-2/5">
         <div className="mb-10 lg:mb-20">
           <motion.h1
             whileInView={{ opacity: 1, x: 0 }}

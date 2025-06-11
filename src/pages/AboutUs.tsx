@@ -6,24 +6,9 @@ import indServed from "../data//indServed.json";
 import check from "../assets/icons/check.svg";
 import aboutUsImage from "../assets/images/image-2.jpg";
 import bgImage from "../assets/images/image-8.jpg";
-import { motion, Variants } from "motion/react";
+import { motion } from "motion/react";
 
 const AboutUs = () => {
-  const iconVariants = (duration: number, axis: "x" | "y"): Variants => {
-    const animation: Variants = {
-      initial: { [axis]: -20 },
-      animate: {
-        [axis]: [10, -10],
-        transition: {
-          duration: duration,
-          ease: "linear",
-          repeat: Infinity,
-          repeatType: "reverse" as "reverse",
-        },
-      } as any,
-    };
-    return animation;
-  };
   return (
     <>
       <BackgroundImage header="About Us" bgImage={bgImage} />
@@ -89,8 +74,8 @@ const AboutUs = () => {
       </div>
 
       <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1 }}
         className="font-semibold text-2xl text-center lg:mx-5 md:mx-5 mt-10 "
       >

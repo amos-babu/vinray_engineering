@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import Navbar from "./Navbar";
 
 type BackgroundImageProps = {
   header: string;
@@ -21,7 +22,9 @@ const BackgroundImage = ({ header, bgImage }: BackgroundImageProps) => {
           className="absolute inset-0 bg-cover bg-center 
             before:absolute before:inset-0 before:bg-black/50"
           style={{ backgroundImage: `url(${bgImage})` }}
-        ></div>
+        >
+          <Navbar/>
+        </div>
 
         <div
           className="relative z-10 flex flex-col items-center 

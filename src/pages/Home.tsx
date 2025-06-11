@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import videoBg from "../assets/video/video.mp4";
 import { motion, Variants } from "motion/react";
+import Navbar from "@/components/Navbar";
 
 const Home = () => {
   const container = (
@@ -21,8 +22,10 @@ const Home = () => {
 
   return (
     <div className="flex flex-col relative h-screen w-full">
+      <Navbar />
       <div className="overlay"></div>
       <video src={videoBg} autoPlay loop muted />
+      
       <div
         id="content"
         className="relative z-10 flex flex-col items-center 

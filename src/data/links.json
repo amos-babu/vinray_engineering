@@ -3,30 +3,30 @@
         "id": 1,
         "name": "Home",
         "to":"/",
-        "styles": "hover:text-orange-500 text-gray-400 font-normal md:text-base lg:text-base text-xl"
+        "styles": "hover:text-orange-500 text-gray-200 font-normal md:text-base lg:text-xl text-xl"
     },
     {
         "id": 2,
         "name": "About Us",
         "to":"/about-us",
-        "styles": "hover:text-orange-500 text-gray-400 font-normal md:text-base lg:text-base text-xl"
+        "styles": "hover:text-orange-500 text-gray-200 font-normal md:text-base lg:text-xl text-xl"
     },
     {
         "id": 3,
         "name": "Services",
         "to":"/services",
-        "styles": "hover:text-orange-500 text-gray-400 font-normal md:text-base lg:text-base text-xl"
+        "styles": "hover:text-orange-500 text-gray-200 font-normal md:text-base lg:text-xl text-xl"
     },
     {
         "id": 4,
         "name": "Products",
         "to":"/products",
-        "styles": "hover:text-orange-500 text-gray-400 font-normal md:text-base lg:text-base text-xl"
+        "styles": "hover:text-orange-500 text-gray-200 font-normal md:text-base lg:text-xl text-xl"
     },
     {
         "id": 5,
         "name": "Contact Us",
         "to":"/contact-us",
-        "styles": "hover:text-orange-500 text-gray-400 font-normal md:text-base lg:text-base text-xl"
+        "styles": "hover:text-orange-500 text-gray-200 font-normal md:text-base lg:text-xl text-xl"
     }
 ]

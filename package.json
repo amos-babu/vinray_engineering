@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest --watch"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.16",
@@ -34,6 +37,7 @@
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/ui": "^3.2.4",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",

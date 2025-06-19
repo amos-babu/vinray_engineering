@@ -19,6 +19,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Run Tests
+        run: npm test
+
       - name: Trigger Netlify Build
         run: curl -X POST -d {} ${{ secrets.NETLIFY_BUILD_HOOK }}
 

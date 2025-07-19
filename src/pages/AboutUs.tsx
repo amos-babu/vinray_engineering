@@ -12,15 +12,18 @@ const AboutUs = () => {
   return (
     <>
       <BackgroundImage header="About Us" bgImage={bgImage} />
-      <div
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1 }}
         className="flex flex-col lg:flex-row justify-center items-center
        lg:items-start gap-2 lg:mx-4 md:mx-4"
       >
         <div className="mx-1 md:mx-20 lg:w-1/2">
           <motion.p
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: -100 }}
-            transition={{ duration: 1.5 }}
+            // whileInView={{ opacity: 1, x: 0 }}
+            // initial={{ opacity: 0, x: -100 }}
+            // transition={{ duration: 1.5 }}
             className="text-xl text-center text-neutral-500"
           >
             <span className="font-bold text-2xl">
@@ -36,15 +39,15 @@ const AboutUs = () => {
         </div>
         <div className="w-full lg:mx-20 h-150 lg:w-1/2 lg:h-100">
           <motion.img
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: 100 }}
-            transition={{ duration: 1 }}
+            // whileInView={{ opacity: 1, x: 0 }}
+            // initial={{ opacity: 0, x: 100 }}
+            // transition={{ duration: 1 }}
             className="h-full w-full rounded-lg  hover:opacity-60 cursor-pointer"
             src={aboutUsImage}
             alt="Products"
           />
         </div>
-      </div>
+      </motion.div>
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 100 }}

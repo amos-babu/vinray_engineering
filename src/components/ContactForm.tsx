@@ -5,7 +5,6 @@ import { useState } from "react";
 import axios from "axios";
 import { Toaster } from "./ui/sonner";
 import { toast } from "sonner";
-import { motion } from "motion/react";
 
 type FormDataProps = {
   name: string;
@@ -63,21 +62,11 @@ const ContactForm = () => {
       <Toaster position="top-right" />
       <form onSubmit={handleSubmit} className="mx-3 lg:w-2/5">
         <div className="mb-10 lg:mb-20">
-          <motion.h1
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: -100 }}
-            transition={{ duration: 1 }}
-            className="font-bold break-all text-2xl lg:text-4xl text-center"
-          >
+          <h1 className="font-bold break-all text-2xl lg:text-4xl text-center">
             Send A Message
-          </motion.h1>
+          </h1>
         </div>
-        <motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 1.5 }}
-          className="flex flex-col gap-6 lg:mx-10"
-        >
+        <div className="flex flex-col gap-6 lg:mx-10">
           <div>
             <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
               Name
@@ -189,7 +178,7 @@ const ContactForm = () => {
           >
             Send Message
           </button>
-        </motion.div>
+        </div>
       </form>
     </>
   );

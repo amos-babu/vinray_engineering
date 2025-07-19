@@ -1,10 +1,16 @@
 import mapPin from "../assets/icons/map-pin.svg";
 import phone from "../assets/icons/phone.svg";
 import envelope from "../assets/icons/envelope.svg";
+import { motion } from "motion/react";
 
 const ContactListCard = () => {
   return (
-    <div className="lg:w-2/5 mx-4">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 100 }}
+      transition={{ duration: 1 }}
+      className="lg:w-2/5 mx-4"
+    >
       <div className="mb-10 lg:mb-20">
         <h1 className="font-bold break-all text-2xl lg:text-4xl text-center">
           Get In Touch
@@ -51,7 +57,7 @@ const ContactListCard = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

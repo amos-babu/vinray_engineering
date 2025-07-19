@@ -12,8 +12,10 @@ const AboutUs = () => {
   return (
     <>
       <BackgroundImage header="About Us" bgImage={bgImage} />
-      <div className="flex flex-col lg:flex-row justify-center items-center
-       lg:items-start gap-2 lg:mx-4 md:mx-4">
+      <div
+        className="flex flex-col lg:flex-row justify-center items-center
+       lg:items-start gap-2 lg:mx-4 md:mx-4"
+      >
         <div className="mx-1 md:mx-20 lg:w-1/2">
           <motion.p
             whileInView={{ opacity: 1, x: 0 }}
@@ -45,65 +47,68 @@ const AboutUs = () => {
       </div>
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 1 }}
-        className="font-semibold text-2xl lg:text-4xl text-center lg:mx-5 md:mx-5 mt-10 "
       >
-        Why Choose Vinray Engineering Limited?
-      </motion.div>
-      <div className="flex flex-col lg:flex-row md:flex-row flex-wrap gap-8 mt-10 items-center justify-center mx-auto w-full max-w-8xl">
-        {whyChooseUs.map((why) => (
-          <div
-            key={why.id}
-            className="block max-w-md p-6 cursor-pointer bg-white border
-             border-gray-200 rounded-lg shadow-lg 
-             hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700
-              dark:hover:bg-gray-700"
-          >
-            <div className="flex justify-start gap-4">
-              <img className="w-10 h-10" src={checkCircle} alt="Check" />
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                {why.name}
-              </h5>
-            </div>
-            <p className="font-normal text-gray-700 dark:text-gray-400 mt-5">
-              {why.description}
-            </p>
-          </div>
-        ))}
-      </div>
-
-      <motion.div
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 1 }}
-        className="font-semibold text-2xl text-center lg:mx-5 md:mx-5 mt-10 "
-      >
-        Industries Served
-      </motion.div>
-      <div className="flex flex-col justify-center items-center">
-        <div className="flex flex-col justify-start items-start gap-10 mt-5 px-4 md:w-3/4 lg:w-1/2">
-          {indServed.map((ind) => (
+        <div className="font-semibold text-2xl lg:text-4xl text-center lg:mx-5 md:mx-5 mt-10 ">
+          Why Choose Vinray Engineering Limited?
+        </div>
+        <div className="flex flex-col lg:flex-row md:flex-row flex-wrap gap-8 mt-10 items-center justify-center mx-auto w-full max-w-8xl">
+          {whyChooseUs.map((why) => (
             <div
-              key={ind.id}
-              className="flex items-center justify-center gap-4"
+              key={why.id}
+              className="block max-w-md p-6 cursor-pointer bg-white border
+              border-gray-200 rounded-lg shadow-lg 
+              hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700
+                dark:hover:bg-gray-700"
             >
-              <img className="w-7 h-7" src={check} alt="check" />
-              <p className="text-start text-neutral-500 text-lg">
-                {ind.description}
+              <div className="flex justify-start gap-4">
+                <img className="w-10 h-10" src={checkCircle} alt="Check" />
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  {why.name}
+                </h5>
+              </div>
+              <p className="font-normal text-gray-700 dark:text-gray-400 mt-5">
+                {why.description}
               </p>
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
 
-      <div className="mt-10 mx-6 lg:mx-30 mb-20">
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1 }}
+      >
+        <div className="font-semibold text-2xl text-center lg:mx-5 md:mx-5 mt-10 ">
+          Industries Served
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-start items-start gap-10 mt-5 px-4 md:w-3/4 lg:w-1/2">
+            {indServed.map((ind) => (
+              <div
+                key={ind.id}
+                className="flex items-center justify-center gap-4"
+              >
+                <img className="w-7 h-7" src={check} alt="check" />
+                <p className="text-start text-neutral-500 text-lg">
+                  {ind.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 1 }}
+        className="mt-10 mx-6 lg:mx-30 mb-20"
+      >
         <blockquote className="text-xl italic font-semibold text-gray-900 dark:text-white">
-          <img
-            className="w-10 h-10"
-            src={bloquote}
-            alt="Bloquote"
-          />
+          <img className="w-10 h-10" src={bloquote} alt="Bloquote" />
           <p>
             "With a solid reputation for delivering superior products and
             services, Vinray Engineering Limited is a trusted partner for
@@ -111,7 +116,7 @@ const AboutUs = () => {
             electrical and industrial solutions."
           </p>
         </blockquote>
-      </div>
+      </motion.div>
     </>
   );
 };

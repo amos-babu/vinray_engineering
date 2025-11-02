@@ -63,8 +63,8 @@ const Home = () => {
           and requirements.
         </span>
 
-        <div className="flex flex-col lg:flex-row md:flex-row gap-4">
-          <Link to={`/contact-us`}>
+        <div className="flex flex-col lg:flex-row md:flex-row">
+          {/* <Link to={`/contact-us`}>
             <motion.button
               variants={container(0.5, -100, "x")}
               initial="hidden"
@@ -74,17 +74,17 @@ const Home = () => {
             >
               Contact Us
             </motion.button>
-          </Link>
+          </Link> */}
 
           <Link to={`/about-us`}>
             <motion.button
               variants={container(0.5, 100, "x")}
               initial="hidden"
               animate="visible"
-              className="cursor-pointer px-10 mt-3 py-3 text-base md:text-lg border pointer-cursor 
-              hover:text-orange-600 rounded-3xl"
+              className="cursor-pointer text-orange-600 px-10 mt-3 py-3 text-base md:text-lg border border-orange-600 pointer-cursor 
+              hover:text-white rounded-3xl bg-white"
             >
-              Learn More
+              Discover More
             </motion.button>
           </Link>
         </div>

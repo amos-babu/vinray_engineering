@@ -34,9 +34,9 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrors([]);
-
+    //https://vinray-email-services.onrender.com/api/contact
     await axios
-      .post("https://node-email-services.onrender.com/api/contact", formData)
+      .post("https://vinray-email-services.onrender.com/api/contact", formData)
       .then((res) => {
         toast.success(res.data.msg);
         setFormData({

@@ -87,13 +87,8 @@ const Home = () => {
               variants={container(0.5, 100, "x")}
               initial="hidden"
               animate="visible"
-<<<<<<< HEAD
               className="cursor-pointer text-orange-600 px-10 mt-3 py-3 text-base md:text-lg border border-orange-600 pointer-cursor 
               hover:text-white rounded-3xl bg-white"
-=======
-              className="cursor-pointer px-10 mt-3 py-3 text-base md:text-lg border pointer-cursor 
-              hover:text-orange-600 hover:bg-gray-100 hover:border-orange-600 rounded-3xl"
->>>>>>> c4c13f5bae87728e4d4dcdb5bed2ea49bea4d8d6
             >
               Discover More
             </motion.button>
